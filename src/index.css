@@ -1,3 +1,30 @@
+:root {
+  --clr-main-bg: #00416a;
+  --clr-main-gradient-bg: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  --clr-main-gradient-w-bg: '-webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5)';
+  --clr-secondary-bg: rgba(255, 255, 255, 0.5);
+
+  --clr-form-f: #7f7fd5;
+  --clr-btn-f: #91eae4;
+}
+
+/*=============================================
+=                Global Styles                =
+=============================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +32,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*=====  End of Global Styles  ======*/
