@@ -44,24 +44,24 @@ class App extends Component {
   render() {
     const { isValid } = this.state;
 
-    // return isValid ? (
-    //   <Dashboard logout={this.logout} />
-    // ) : (
-    //   <Login login={this.login} />
-    // );
-
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Login login={this.login} />
-          </Route>
-          <Route exact path="/dashboard">
-            {isValid ? <Dashboard logout={this.logout} /> : <Error />}
-          </Route>
-        </Switch>
-      </Router>
+    return isValid ? (
+      <Dashboard logout={this.logout} />
+    ) : (
+      <Login login={this.login} />
     );
+
+    // return (
+    //   <Router>
+    //     <Switch>
+    //       <Route exact path="/">
+    //         <Login login={this.login} />
+    //       </Route>
+    //       <Route exact path="/dashboard">
+    //         {isValid ? <Dashboard logout={this.logout} /> : <Error />}
+    //       </Route>
+    //     </Switch>
+    //   </Router>
+    // );
   }
 }
 
