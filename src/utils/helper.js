@@ -16,6 +16,7 @@ export const passwordIsValid = value => {
   }
 };
 
+
 export const paginate = followers => {
   const itemsPerPage = 12;
   const pages = Math.ceil(followers.length / itemsPerPage);

@@ -15,7 +15,7 @@ const Users = () => {
   useEffect(() => {
     if (loading) return;
     setUsers(data[page]);
-  }, [loading, page]);
+  }, [loading, page, data]);
 
   const handlePage = index => {
     setPage(index);

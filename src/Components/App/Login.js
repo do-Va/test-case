@@ -16,8 +16,6 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: 'var(--clr-main-bg)',
-    background: 'var(--clr-main-gradient-w-bg)',
     background: 'var(--clr-main-gradient-bg)',
   },
 };
