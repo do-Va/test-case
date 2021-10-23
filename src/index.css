@@ -2,10 +2,19 @@
   --clr-main-bg: #00416a;
   --clr-main-gradient-bg: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
   --clr-main-gradient-w-bg: '-webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5)';
+  --clr-main-gradient-animation: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5,
+    #86a8e7,
+    #91eae4
+  );
   --clr-secondary-bg: rgba(255, 255, 255, 0.5);
 
   --clr-form-f: #7f7fd5;
   --clr-btn-f: #91eae4;
+  --clr-ring-f: #86a8e7;
 }
 
 /*=============================================
@@ -33,5 +42,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
+}
+
+h2 {
+  background: var(--clr-main-gradient-bg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  border: none;
+  background: var(--clr-form-f);
+  border-radius: 5px;
+  color: var(--clr-btn-f);
+  font-weight: bold;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(120%);
 }
 /*=====  End of Global Styles  ======*/

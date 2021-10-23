@@ -66,6 +66,7 @@ const Form = ({ classes, login }) => {
 const styles = {
   form: {
     width: '90%',
+    maxWidth: '550px',
     display: 'flex',
     flexDirection: 'column',
     padding: '2em',
@@ -116,16 +117,6 @@ const styles = {
     padding: '1em 2em',
     textTransform: 'uppercase',
     letterSpacing: '5px',
-    border: 'none',
-    background: 'var(--clr-form-f)',
-    borderRadius: '5px',
-    color: 'var(--clr-btn-f)',
-    fontWeight: 'bold',
-    transition: 'all .2s linear',
-
-    '&:hover': {
-      filter: 'brightness(120%)',
-    },
   },
 };
 
